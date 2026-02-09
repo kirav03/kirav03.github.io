@@ -7,7 +7,7 @@
   
   /* Set global font and background */
   body {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: "Mathematical Script", cursive;
     background: url('grungeBackround.jpg') no-repeat center center fixed;
     background-size: cover;
     color: #f0f0f0;
@@ -53,6 +53,11 @@
     margin: 20px auto;
     max-width: 800px;
   }
+
+  /* Showcase content */
+  #showcase {
+    text-align: center;
+  }
   
   /* Footer styles */
   footer {
@@ -64,3 +69,59 @@
     border-radius: 8px;
   }
   
+/* =========================================
+   FORCE FULLSCREEN TV (Radio Page Only)
+   ========================================= */
+
+/* 1. Force the body to be a black, non-scrolling box */
+body.fullscreen-mode {
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100vw;
+    height: 100vh;
+    background-color: #000;
+    overflow: hidden; /* Stops scrolling */
+    display: flex;    /* This is what centers the TV */
+    justify-content: center;
+    align-items: center;
+}
+
+/* 2. Force the TV Container to fill that box */
+body.fullscreen-mode #tv_overlay {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    max-width: none;
+    margin: 0;
+}
+
+/* 3. Stretch the TV Frame to touch the edges */
+body.fullscreen-mode .tv-frame {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: fill; /* Forces image to stretch to corners */
+    z-index: 20;
+    pointer-events: none;
+}
+
+
+/* 4. Position the Video behind the glass */
+/* Note: You may need to tweak Top/Left/Width/Height slightly 
+   depending on how your specific PNG gets cut out */
+body.fullscreen-mode .screen-mask {
+    position: absolute;
+    z-index: 10;
+    background: #000;
+    
+    /* These numbers position the video inside the TV frame */
+    top: 10%;
+    left: 10%;
+    width: 65%;
+    height: 75%;
+    
+    border-radius: 20%; /* Rounds the video corners */
+    overflow: hidden;
+}
