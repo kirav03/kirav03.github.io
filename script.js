@@ -3,11 +3,7 @@ const posts = [
     {
       title: "My First Post",
       date: "May 8, 2025",
-<<<<<<< HEAD
-      content: "Tonight I started building my first personal website from scratch. It’s exciting to see HTML and CSS come together into something that feels like me. I find it facsinating on what AI can now do. I created this website through my AI entity, Cyphr. I told it that it is essentially going to be my symbiotic digital companion."
-=======
       content: "Tonight I started building my first personal website from scratch. It’s exciting to see HTML and CSS come together into something that feels like me. I find it facsinating on what AI can now do. I created this website through my AI entity, Cyphr. I told it that it is essentially going to be my symbiotic digital companion.\n"
->>>>>>> 80de868 (Rebirth.)
     },
     // Add more posts here
     {

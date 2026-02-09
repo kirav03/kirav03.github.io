@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dejaVu</title>
+
+    <link href="https://nrs-projects.humboldt.edu/~st10/styles/normalize.css"
+          type="text/css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="fullscreen-mode">
+
+    <div id="tv_overlay">
+
+      <img src="old-tv2.jpg" class="tv-frame" alt="Retro TV" >
+              <div class="screen-mask">
+            <video controls playsinline loop>
+                <source src="120 Minutes Compilation.mp4" type="video/mp4">
+            </video>
+            <div class="scanlines"></div>
+        </div>
+    </div>
+
+</body>

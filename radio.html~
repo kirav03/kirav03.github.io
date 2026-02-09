@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Title</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="fullscreen-mode">
+
+    <div id="tv_overlay">
+        <div class="screen-mask">
+            <video controls playsinline loop>
+                <source src="120 Minutes Compilation.mp4" type="video/mp4">
+            </video>
+            <div class="scanlines"></div>
+        </div>
+        <img src="tv-overlay.png" class="tv-frame" alt="Retro TV">
+    </div>
+
+</body>
